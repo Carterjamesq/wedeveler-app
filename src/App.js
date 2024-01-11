@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/Home'
+import ThemeProvider from './ThemeProvider';
+import Switch from './Switch';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <ThemeProvider>
+          {({ darkMode, toggleDarkMode }) => (
+            <div style={{ background: darkMode ? '#0d0d0d' : '#fff', color: darkMode ? '#fff' : '#0d0d0d' }}>
+              <Switch checked={darkMode} onChange={toggleDarkMode} />
+              <Home/>
+            </div>
+          )}
+        </ThemeProvider>
+        
+      </div>
   );
 }
 
