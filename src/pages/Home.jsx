@@ -11,7 +11,6 @@ const Home = () => {
     <div className="container-fluid p-4">
       <div className="row">
         <div className="col-lg-4">
-          <p>Git add</p>
           <ProfileCard />
         </div>
         <div className="col-lg">
