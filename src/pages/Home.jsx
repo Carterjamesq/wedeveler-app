@@ -14,6 +14,7 @@ const Home = () => {
           <ProfileCard />
         </div>
         <div className="col-lg">
+          <pre>Text</pre>
           <HomeBanner />
           <Counts />
           <Expirience />
