@@ -1,20 +1,19 @@
-import React, { useEffect, useRef } from 'react';
-import { FaTelegram, FaLinkedin, FaPhone, FaFilePdf } from 'react-icons/fa';
-import PhotoLogo from '../../src/assets/images/pp.jpg';
-import MyResume from '../assets/Vitalyi Rabchevskyi Front-end Developer.pdf';
-import ScrollReveal from 'scrollreveal';
+import React, { useEffect, useRef } from "react";
+import { FaTelegram, FaLinkedin, FaPhone, FaFilePdf } from "react-icons/fa";
+import PhotoLogo from "../../src/assets/images/pp.jpg";
+import MyResume from "../assets/Vitalyi Rabchevskyi Front-end Developer.pdf";
+import ScrollReveal from "scrollreveal";
 
 import { IoMail } from "react-icons/io5";
-import OnlineIndicator from './OnlineIndicator';
-const copiedText = '@carterjames';
-
+import OnlineIndicator from "./OnlineIndicator";
+const copiedText = "@carterjames";
 
 const handleCopyToClipboard = async () => {
   try {
     await navigator.clipboard.writeText(copiedText);
     alert(`Nickname copied to clipboard: ${copiedText}`);
   } catch (err) {
-    console.error('Unable to copy text to clipboard', err);
+    console.error("Unable to copy text to clipboard", err);
   }
 };
 
@@ -23,22 +22,26 @@ const ProfileCard = () => {
 
   useEffect(() => {
     const config = {
-      origin: 'left',
+      origin: "left",
       duration: 500,
       delay: 150,
-      distance: '500px',
+      distance: "500px",
       scale: 1,
-      easing: 'ease',
+      easing: "ease",
     };
     ScrollReveal().reveal(boxRef.current, config);
   }, []);
 
-
   return (
-    
     <div className="row fixed mb-5">
-      <div className="col-lg border rounded-card px-4 py-4 text-center" ref={boxRef}>
-        <div className='online mb-4 border rounded-5'>
+      <div>
+        <h1>Hello Kitty</h1>
+      </div>
+      <div
+        className="col-lg border rounded-card px-4 py-4 text-center"
+        ref={boxRef}
+      >
+        <div className="online mb-4 border rounded-5">
           <OnlineIndicator />
         </div>
         <div className="row">
@@ -49,7 +52,7 @@ const ProfileCard = () => {
         <img className="rounded-2 avatar mb-4" src={PhotoLogo} alt="Profile" />
         <div className="row">
           <a className="h4" href="mailto:carterjames@ukr.net">
-            <IoMail className='mx-2' />
+            <IoMail className="mx-2" />
             carterjames@ukr.net
           </a>
           <div className="display-7 mb-4 country">
@@ -61,7 +64,10 @@ const ProfileCard = () => {
           </div>
           <div className="flex-row-center px-4">
             <div className="col-lg">
-              <a className="h2" href="https://www.linkedin.com/in/vitalyi-rabchevskyi-902702199/">
+              <a
+                className="h2"
+                href="https://www.linkedin.com/in/vitalyi-rabchevskyi-902702199/"
+              >
                 <FaLinkedin />
               </a>
             </div>
@@ -76,7 +82,11 @@ const ProfileCard = () => {
               </a>
             </div>
             <div className="col-lg">
-              <a className="h2" href={MyResume} download="Vitalyi Rabchevskyi Front-end Developer.pdf">
+              <a
+                className="h2"
+                href={MyResume}
+                download="Vitalyi Rabchevskyi Front-end Developer.pdf"
+              >
                 <FaFilePdf />
               </a>
             </div>
