@@ -34,9 +34,6 @@ const ProfileCard = () => {
 
   return (
     <div className="row fixed mb-5">
-      <div>
-        <h1>Hello Kitty</h1>
-      </div>
       <div
         className="col-lg border rounded-card px-4 py-4 text-center"
         ref={boxRef}
