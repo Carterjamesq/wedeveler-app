@@ -7,7 +7,7 @@ import { IoIosBriefcase } from "react-icons/io";
 const Cases = () => {
   const [loading, setLoading] = useState(true);
   const [casePosts, setCasePosts] = useState([]);
-  const [visiblePosts, setVisiblePosts] = useState(2);
+  const [visiblePosts, setVisiblePosts] = useState(4);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   const client = createClient({
     space: "umsxju4f68ej",
@@ -88,7 +88,7 @@ const Cases = () => {
                 {portfolio.fields.tags &&
                   portfolio.fields.tags.map &&
                   portfolio.fields.tags.map((tag, index) => (
-                    <span key={index} className="badge btn-primary me-2">
+                    <span key={index} className="badge btn-primary me-2 mb-2">
                       {tag}
                     </span>
                   ))}
@@ -104,7 +104,7 @@ const Cases = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Visit <MdArrowOutward />
+                    <MdArrowOutward />
                   </a>
                 </div>
               </div>
