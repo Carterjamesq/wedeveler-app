@@ -199,7 +199,7 @@ const Skills = () => {
             <div className="col">
               <p>Webflow</p>
               <span className="display-6">
-                <CountWithAnimation suffix="%" end={99} duration={5} />
+                <CountWithAnimation suffix="%" end={100} duration={5} />
               </span>
             </div>
           </Col>
