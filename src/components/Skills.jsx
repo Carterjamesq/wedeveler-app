@@ -19,6 +19,8 @@ import { DiJavascript1 } from "react-icons/di";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { SiWebpack } from "react-icons/si";
 import { IoCodeSlash } from "react-icons/io5";
+import { FaWebflow } from "react-icons/fa6";
+import { SiWebflow } from "react-icons/si";
 
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -36,6 +38,7 @@ const CountWithAnimation = ({ end, duration }) => {
       {end === 95 && "%"}
       {end === 96 && "%"}
       {end === 99 && "%"}
+      {end === 100 && "%"}
     </span>
   );
 };
@@ -184,6 +187,17 @@ const Skills = () => {
             </div>
             <div className="col">
               <p>Wordpress</p>
+              <span className="display-6">
+                <CountWithAnimation suffix="%" end={99} duration={5} />
+              </span>
+            </div>
+          </Col>
+          <Col className="border rounded-5 text-center p-3">
+            <div className="col">
+              <SiWebflow />
+            </div>
+            <div className="col">
+              <p>Webflow</p>
               <span className="display-6">
                 <CountWithAnimation suffix="%" end={99} duration={5} />
               </span>
