@@ -96,10 +96,18 @@ const Cases = () => {
             </div>
             <div className="row">
               <div className="col-lg">
-                <h4>{portfolio.fields.projectTitle}</h4>
+                <h5>{portfolio.fields.projectTitle}</h5>
                 <div className="coltext-end">
                   <a
                     className="btn btn-primary"
+                    href={portfolio.fields.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    className="btn btn-outline"
                     href={portfolio.fields.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
