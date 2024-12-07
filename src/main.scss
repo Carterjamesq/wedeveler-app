@@ -256,8 +256,9 @@ p {
 
   .tags {
     position: absolute;
-    left: 2rem;
-    bottom: 2rem;
+    padding: 2rem;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -398,6 +399,16 @@ p {
   }
   .online {
     width: auto;
+  }
+  .image-container {
+    position: relative;
+
+    .tags {
+      position: absolute;
+      padding: 1rem;
+      left: 0;
+      bottom: 0;
+    }
   }
 }
 @media (max-width: 300px) {
