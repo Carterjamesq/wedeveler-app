@@ -28,7 +28,7 @@ const HomeBanner = () => {
         </div>
       </div>
       <div className="h1 mb-5 display-1">
-        Hi, I'm <span>Vitalyi</span>,<br></br> Front-end Developer &nbsp;
+        Hi, I'm <span>Vitalyi</span>,<br></br> Web Developer &nbsp;
         <br></br>
         <ReactTypingEffect
           text={["WordPress", "Webflow", "Headless", "<React />"]}
