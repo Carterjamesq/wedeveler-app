@@ -63,10 +63,10 @@ const Expirience = () => {
               During my tenure as a Front-end Developer (Wordpress) in company,
               main role was to create and maintain the front-end of websites on
               the Wordpress platform, ensuring that they were visually
-              appealing, user-friendly, and responsive. You achieved this by
-              using your skills in HTML, CSS, and JavaScript to develop website
-              layouts, and customizing Wordpress themes and plugins using PHP
-              and Wordpress APIs.
+              appealing, user-friendly, and responsive. I achieved this by using
+              my skills in HTML, CSS, and JavaScript to develop website layouts,
+              and customizing Wordpress themes and plugins using PHP and
+              Wordpress APIs.
             </p>
           </div>
         </div>
