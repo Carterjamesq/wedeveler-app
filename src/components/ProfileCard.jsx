@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { FaTelegram, FaLinkedin, FaPhone, FaFilePdf } from "react-icons/fa";
 import PhotoLogo from "../../src/assets/images/pp.jpg";
-import MyResume from "../assets/Vitalyi Rabchevskyi Front-end Developer.pdf";
+import MyResume from "../assets/Vitalyi Rabchevskyi Wordpress Developer.pdf";
 import ScrollReveal from "scrollreveal";
 
 import { IoMail } from "react-icons/io5";
@@ -82,7 +82,7 @@ const ProfileCard = () => {
               <a
                 className="h2"
                 href={MyResume}
-                download="Vitalyi Rabchevskyi Front-end Developer.pdf"
+                download="Vitalyi Rabchevskyi Wordpress Developer.pdf"
               >
                 <FaFilePdf />
               </a>
